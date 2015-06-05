@@ -1,0 +1,6 @@
+<?php
+function get_dna($input) {
+  $pairs = array('A' => 'T', 'T' => 'A', 'C' => 'G', 'G' => 'C');
+
+  return $pairs[$input];
+}

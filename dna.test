@@ -1,0 +1,16 @@
+<?php
+class DnaUnitTests extends DrupalUnitTestCase {
+  public static function getInfo() {
+    return array(
+      'name' => 'DNA Module Unit Tests',
+      'description' => 'Test that get_dna() function works properly',
+      'group' => 'Biscuited Tests',
+    );
+  }
+
+  function testGetDnaOfA() {
+    $input = 'A';
+    $result = get_collatz($input);
+    $this->assertEqual($result, "T";
+  }
+}

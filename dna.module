@@ -1,6 +1,12 @@
 <?php
 function get_dna($input) {
   $pairs = array('A' => 'T', 'T' => 'A', 'C' => 'G', 'G' => 'C');
+  $output = '';
+  $input = str_split($input);
 
-  return $pairs[$input];
+  foreach ($input as $char) {
+    $output .= $pairs[$char];
+  }
+
+  return $output;
 }

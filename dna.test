@@ -31,4 +31,16 @@ class DnaUnitTests extends DrupalUnitTestCase {
     $result = get_dna($input);
     $this->assertEqual($result, "C");
   }
+
+  function testGetDnaOfAT() {
+    $input = 'AT';
+    $result = get_dna($input);
+    $this->assertEqual($result, "TA");
+  }
+
+  function testGetDnaOfLongSequence() {
+    $input = 'ATCGTAC';
+    $result = get_dna($input);
+    $this->assertEqual($result, "TAGCATG");
+  }
 }

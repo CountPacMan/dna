@@ -1,4 +1,4 @@
-# Drupal No Comments Subject Module Assessment for Epicodus
+# Drupal DNA sequence Module Assessment for Epicodus
 ## by Daniel Toader
 ### Date: June 5, 2015
 #### Description

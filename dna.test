@@ -10,7 +10,25 @@ class DnaUnitTests extends DrupalUnitTestCase {
 
   function testGetDnaOfA() {
     $input = 'A';
-    $result = get_collatz($input);
-    $this->assertEqual($result, "T";
+    $result = get_dna($input);
+    $this->assertEqual($result, "T");
+  }
+
+  function testGetDnaOfT() {
+    $input = 'T';
+    $result = get_dna($input);
+    $this->assertEqual($result, "A");
+  }
+
+  function testGetDnaOfC() {
+    $input = 'C';
+    $result = get_dna($input);
+    $this->assertEqual($result, "G");
+  }
+
+  function testGetDnaOfG() {
+    $input = 'G';
+    $result = get_dna($input);
+    $this->assertEqual($result, "C");
   }
 }

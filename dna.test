@@ -62,7 +62,6 @@ class DnaFunctionalTests extends DrupalWebTestCase {
 
     $info = array();
     $info['input'] = "AT";
-    //found the URL to post the form to by manually clicking to the Add Content menu and clicking on Page.
     $this->drupalPost('dna', $info, t('submit'));
 
     $path['source'] = 'dna';
